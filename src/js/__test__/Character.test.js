@@ -1,4 +1,5 @@
 import Character from '../Character';
+
 test('check Character error name', () => {
   expect(() => {
     // eslint-disable-next-line no-unused-vars
