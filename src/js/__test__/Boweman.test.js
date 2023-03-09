@@ -1,7 +1,7 @@
 import Boweman from '../Boweman';
 
 test('check boweman is created', () => {
-  const newBw = new Boweman('gamer', 'Zombie');
+  const newBw = new Boweman('gamer', 'Boweman');
   expect(newBw).toEqual(
     {
       name: 'gamer',

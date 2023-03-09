@@ -1,7 +1,7 @@
 import Swordsman from '../Swordsman';
 
 test('check Swordsman is created', () => {
-  const newSw = new Swordsman('gamer', 'Zombie');
+  const newSw = new Swordsman('gamer', 'Swordsman');
   expect(newSw).toEqual(
     {
       name: 'gamer',

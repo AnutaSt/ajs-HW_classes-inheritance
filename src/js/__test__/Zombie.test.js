@@ -1,7 +1,7 @@
 import Zombie from '../Zombie';
 
 test('check Zombie is created', () => {
-  const newZb = new Zombie('gamer', 'Swordsman');
+  const newZb = new Zombie('gamer', 'Zombie');
   expect(newZb).toEqual(
     {
       name: 'gamer',

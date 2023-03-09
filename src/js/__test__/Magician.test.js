@@ -1,7 +1,7 @@
 import Magician from '../Magician';
 
 test('check Magician is created', () => {
-  const newMg = new Magician('gamer', 'Zombie');
+  const newMg = new Magician('gamer', 'Magician');
   expect(newMg).toEqual(
     {
       name: 'gamer',

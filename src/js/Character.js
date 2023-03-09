@@ -4,7 +4,7 @@ export default class Character {
       throw new Error('Длина имени не может быть короче 2 вимволов');
     }
     const arrName = ['Boweman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
-    if (arrName.includes(type) === false) {
+    if (!arrName.includes(type)) {
       throw new Error('Неверный тип игрока');
     }
     this.name = name;
