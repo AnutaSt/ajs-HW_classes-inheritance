@@ -1,11 +1,11 @@
 import Swordsman from '../Swordsman';
 
 test('check Swordsman is created', () => {
-  const newSw = new Swordsman('gamer', 'Swordsman');
+  const newSw = new Swordsman('gamer', 'Zombie');
   expect(newSw).toEqual(
     {
       name: 'gamer',
-      type: 'Swordsman',
+      type: 'Zombie',
       health: 100,
       level: 1,
       attack: 40,
