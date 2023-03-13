@@ -1,11 +1,11 @@
 import Undead from '../Undead';
 
 test('check Undead is created', () => {
-  const newUn = new Undead('gamer', 'Zombie');
+  const newUn = new Undead('gamer', 'Undead');
   expect(newUn).toEqual(
     {
       name: 'gamer',
-      type: 'Zombie',
+      type: 'Undead',
       health: 100,
       level: 1,
       attack: 25,

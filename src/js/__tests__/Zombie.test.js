@@ -14,7 +14,7 @@ test('check Zombie is created', () => {
   );
 });
 
-test('check Swordsman func levelUp', () => {
+test('check Zombie func levelUp', () => {
   const newZb = new Zombie('gamer', 'Zombie');
   newZb.levelUp();
   expect(newZb).toEqual(

@@ -34,3 +34,19 @@ test('check Boweman  func damage', () => {
   newBw.damage(30);
   expect(newBw.health).toBe(77.5);
 });
+
+test('check Boweman error type', () => {
+  expect(() => {
+    const newBw = new Boweman('gamer', 'Boweman');
+    newBw.level = -1;
+    newBw.levelUp();
+  }).toThrowError('нельзя повысить левел умершего');
+});
+
+test('check Boweman error type', () => {
+  expect(() => {
+    const newBw = new Boweman('gamer', 'Boweman');
+    newBw.health = -1;
+    newBw.damage(30);
+  }).toThrowError('нельзя повысить жизненный уровень умершего');
+});
