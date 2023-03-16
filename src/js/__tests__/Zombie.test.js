@@ -15,12 +15,12 @@ test('check Zombie is created', () => {
 });
 
 test('check Zombie func levelUp', () => {
-  const newZb = new Zombie('gamer', 'Zombie');
+  const newZb = new Zombie('gamer', 'Undead');
   newZb.levelUp();
   expect(newZb).toEqual(
     {
       name: 'gamer',
-      type: 'Zombie',
+      type: 'Undead',
       health: 100,
       level: 2,
       attack: 48,

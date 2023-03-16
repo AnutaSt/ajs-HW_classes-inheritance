@@ -15,12 +15,12 @@ test('check boweman is created', () => {
 });
 
 test('check boweman func levelUp', () => {
-  const newBw = new Boweman('gamer', 'Boweman');
+  const newBw = new Boweman('gamer', 'Undead');
   newBw.levelUp();
   expect(newBw).toEqual(
     {
       name: 'gamer',
-      type: 'Boweman',
+      type: 'Undead',
       health: 100,
       level: 2,
       attack: 30,

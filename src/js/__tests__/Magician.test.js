@@ -15,12 +15,12 @@ test('check Magician is created', () => {
 });
 
 test('check Magician func levelUp', () => {
-  const newMg = new Magician('gamer', 'Magician');
+  const newMg = new Magician('gamer', 'Zombie');
   newMg.levelUp();
   expect(newMg).toEqual(
     {
       name: 'gamer',
-      type: 'Magician',
+      type: 'Zombie',
       health: 100,
       level: 2,
       attack: 12,

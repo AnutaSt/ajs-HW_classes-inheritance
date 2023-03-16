@@ -15,12 +15,12 @@ test('check Undead is created', () => {
 });
 
 test('check Undead func levelUp', () => {
-  const newUn = new Undead('gamer', 'Undead');
+  const newUn = new Undead('gamer', 'Zombie');
   newUn.levelUp();
   expect(newUn).toEqual(
     {
       name: 'gamer',
-      type: 'Undead',
+      type: 'Zombie',
       health: 100,
       level: 2,
       attack: 30,
