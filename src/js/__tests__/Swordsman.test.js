@@ -1,7 +1,7 @@
 import Swordsman from '../Swordsman';
 
 test('check Swordsman is created', () => {
-  const newSw = new Swordsman('gamer', 'Swordsman');
+  const newSw = new Swordsman('gamer');
   expect(newSw).toEqual(
     {
       name: 'gamer',
@@ -15,12 +15,12 @@ test('check Swordsman is created', () => {
 });
 
 test('check Swordsman func levelUp', () => {
-  const newSw = new Swordsman('gamer', 'Zombie');
+  const newSw = new Swordsman('gamer', 'Swordsman');
   newSw.levelUp();
   expect(newSw).toEqual(
     {
       name: 'gamer',
-      type: 'Zombie',
+      type: 'Swordsman',
       health: 100,
       level: 2,
       attack: 48,

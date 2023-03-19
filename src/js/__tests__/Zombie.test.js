@@ -1,7 +1,7 @@
 import Zombie from '../Zombie';
 
 test('check Zombie is created', () => {
-  const newZb = new Zombie('gamer', 'Zombie');
+  const newZb = new Zombie('gamer');
   expect(newZb).toEqual(
     {
       name: 'gamer',
@@ -15,12 +15,12 @@ test('check Zombie is created', () => {
 });
 
 test('check Zombie func levelUp', () => {
-  const newZb = new Zombie('gamer', 'Undead');
+  const newZb = new Zombie('gamer', 'Zombie');
   newZb.levelUp();
   expect(newZb).toEqual(
     {
       name: 'gamer',
-      type: 'Undead',
+      type: 'Zombie',
       health: 100,
       level: 2,
       attack: 48,

@@ -1,11 +1,11 @@
 import Daemon from '../Daemon';
 
 test('check Daemon is created', () => {
-  const newDm = new Daemon('gamer', 'Zombie');
+  const newDm = new Daemon('gamer');
   expect(newDm).toEqual(
     {
       name: 'gamer',
-      type: 'Zombie',
+      type: 'Daemon',
       health: 100,
       level: 1,
       attack: 10,

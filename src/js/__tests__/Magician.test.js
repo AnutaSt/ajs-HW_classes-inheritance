@@ -1,7 +1,7 @@
 import Magician from '../Magician';
 
 test('check Magician is created', () => {
-  const newMg = new Magician('gamer', 'Magician');
+  const newMg = new Magician('gamer');
   expect(newMg).toEqual(
     {
       name: 'gamer',
@@ -15,12 +15,12 @@ test('check Magician is created', () => {
 });
 
 test('check Magician func levelUp', () => {
-  const newMg = new Magician('gamer', 'Zombie');
+  const newMg = new Magician('gamer', 'Magician');
   newMg.levelUp();
   expect(newMg).toEqual(
     {
       name: 'gamer',
-      type: 'Zombie',
+      type: 'Magician',
       health: 100,
       level: 2,
       attack: 12,
